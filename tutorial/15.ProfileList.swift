@@ -16,7 +16,7 @@ struct ProfileListView: View {
         ScrollView(.vertical, showsIndicators: true) {
             VStack(spacing: 30) {
                 // profileLists 라는 array의 인자를 받아와서 처리
-                // 받아오는 각각의 인자의 id는 \.self 라는 코드를 통해 고유한 값을 갖게 된다.
+                // 받아오는 각 인자의 id는 \.self 라는 코드를 통해 고유한 값을 갖게 된다.
                 ForEach(profileLists, id: \.self) { profile in
                     
                     HStack(spacing: 30) {
