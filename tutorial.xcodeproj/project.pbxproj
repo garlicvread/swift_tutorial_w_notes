@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D00E01228053879009DA47F /* 17.AnimalMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00E01128053879009DA47F /* 17.AnimalMainView.swift */; };
+		9D00E014280538E7009DA47F /* 17.AnimalLikedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00E013280538E7009DA47F /* 17.AnimalLikedView.swift */; };
 		9D5E3EBA280475CB0076AFDF /* tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EB9280475CB0076AFDF /* tutorialApp.swift */; };
 		9D5E3EBC280475CB0076AFDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EBB280475CB0076AFDF /* ContentView.swift */; };
 		9D5E3EBE280475CC0076AFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5E3EBD280475CC0076AFDF /* Assets.xcassets */; };
@@ -28,9 +30,12 @@
 		9D5E3EE428048B540076AFDF /* 15.ProfileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EE328048B540076AFDF /* 15.ProfileList.swift */; };
 		9D5E3EE62804E20E0076AFDF /* 16.NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EE52804E20E0076AFDF /* 16.NavigationView.swift */; };
 		9D5E3EE82804E9B90076AFDF /* 16.5.NavigationView_applied.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EE72804E9B90076AFDF /* 16.5.NavigationView_applied.swift */; };
+		9DDE22C728050E5800561E59 /* 17.AnimalTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE22C628050E5800561E59 /* 17.AnimalTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D00E01128053879009DA47F /* 17.AnimalMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17.AnimalMainView.swift; sourceTree = "<group>"; };
+		9D00E013280538E7009DA47F /* 17.AnimalLikedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17.AnimalLikedView.swift; sourceTree = "<group>"; };
 		9D5E3EB6280475CB0076AFDF /* tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5E3EB9280475CB0076AFDF /* tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorialApp.swift; sourceTree = "<group>"; };
 		9D5E3EBB280475CB0076AFDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 		9D5E3EE328048B540076AFDF /* 15.ProfileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15.ProfileList.swift; sourceTree = "<group>"; };
 		9D5E3EE52804E20E0076AFDF /* 16.NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 16.NavigationView.swift; sourceTree = "<group>"; };
 		9D5E3EE72804E9B90076AFDF /* 16.5.NavigationView_applied.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 16.5.NavigationView_applied.swift; sourceTree = "<group>"; };
+		9DDE22C628050E5800561E59 /* 17.AnimalTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17.AnimalTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				9D5E3EE328048B540076AFDF /* 15.ProfileList.swift */,
 				9D5E3EE52804E20E0076AFDF /* 16.NavigationView.swift */,
 				9D5E3EE72804E9B90076AFDF /* 16.5.NavigationView_applied.swift */,
+				9D00E01128053879009DA47F /* 17.AnimalMainView.swift */,
+				9DDE22C628050E5800561E59 /* 17.AnimalTabView.swift */,
+				9D00E013280538E7009DA47F /* 17.AnimalLikedView.swift */,
 				9D5E3EB9280475CB0076AFDF /* tutorialApp.swift */,
 				9D5E3EBB280475CB0076AFDF /* ContentView.swift */,
 				9D5E3EBD280475CC0076AFDF /* Assets.xcassets */,
@@ -192,13 +201,16 @@
 				9D5E3ED428047B820076AFDF /* 07.Toggle.swift in Sources */,
 				9D5E3EE028047C9B0076AFDF /* 13.DynamicList.swift in Sources */,
 				9D5E3EDC28047C390076AFDF /* 11.ForEach.swift in Sources */,
+				9D00E01228053879009DA47F /* 17.AnimalMainView.swift in Sources */,
 				9D5E3ECA2804765D0076AFDF /* 02.ImageView.swift in Sources */,
 				9D5E3EC8280476120076AFDF /* 01.TextView.swift in Sources */,
+				9D00E014280538E7009DA47F /* 17.AnimalLikedView.swift in Sources */,
 				9D5E3ECC280478DA0076AFDF /* 03.StackView.swift in Sources */,
 				9D5E3EDE28047C7E0076AFDF /* 12.StaticList.swift in Sources */,
 				9D5E3ED0280479710076AFDF /* 05.TextFieldView.swift in Sources */,
 				9D5E3EBC280475CB0076AFDF /* ContentView.swift in Sources */,
 				9D5E3ED828047BF50076AFDF /* 09.PickerCustom.swift in Sources */,
+				9DDE22C728050E5800561E59 /* 17.AnimalTabView.swift in Sources */,
 				9D5E3EDA28047C200076AFDF /* 10.Spacer.swift in Sources */,
 				9D5E3EE228047CB30076AFDF /* 14.ScrollView.swift in Sources */,
 				9D5E3EBA280475CB0076AFDF /* tutorialApp.swift in Sources */,
