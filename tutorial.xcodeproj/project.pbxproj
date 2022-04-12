@@ -26,6 +26,8 @@
 		9D5E3EE028047C9B0076AFDF /* 13.DynamicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EDF28047C9B0076AFDF /* 13.DynamicList.swift */; };
 		9D5E3EE228047CB30076AFDF /* 14.ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EE128047CB30076AFDF /* 14.ScrollView.swift */; };
 		9D5E3EE428048B540076AFDF /* 15.ProfileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EE328048B540076AFDF /* 15.ProfileList.swift */; };
+		9D5E3EE62804E20E0076AFDF /* 16.NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EE52804E20E0076AFDF /* 16.NavigationView.swift */; };
+		9D5E3EE82804E9B90076AFDF /* 16.5.NavigationView_applied.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EE72804E9B90076AFDF /* 16.5.NavigationView_applied.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		9D5E3EDF28047C9B0076AFDF /* 13.DynamicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13.DynamicList.swift; sourceTree = "<group>"; };
 		9D5E3EE128047CB30076AFDF /* 14.ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14.ScrollView.swift; sourceTree = "<group>"; };
 		9D5E3EE328048B540076AFDF /* 15.ProfileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15.ProfileList.swift; sourceTree = "<group>"; };
+		9D5E3EE52804E20E0076AFDF /* 16.NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 16.NavigationView.swift; sourceTree = "<group>"; };
+		9D5E3EE72804E9B90076AFDF /* 16.5.NavigationView_applied.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 16.5.NavigationView_applied.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				9D5E3EDF28047C9B0076AFDF /* 13.DynamicList.swift */,
 				9D5E3EE128047CB30076AFDF /* 14.ScrollView.swift */,
 				9D5E3EE328048B540076AFDF /* 15.ProfileList.swift */,
+				9D5E3EE52804E20E0076AFDF /* 16.NavigationView.swift */,
+				9D5E3EE72804E9B90076AFDF /* 16.5.NavigationView_applied.swift */,
 				9D5E3EB9280475CB0076AFDF /* tutorialApp.swift */,
 				9D5E3EBB280475CB0076AFDF /* ContentView.swift */,
 				9D5E3EBD280475CC0076AFDF /* Assets.xcassets */,
@@ -182,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5E3EE62804E20E0076AFDF /* 16.NavigationView.swift in Sources */,
 				9D5E3ED428047B820076AFDF /* 07.Toggle.swift in Sources */,
 				9D5E3EE028047C9B0076AFDF /* 13.DynamicList.swift in Sources */,
 				9D5E3EDC28047C390076AFDF /* 11.ForEach.swift in Sources */,
@@ -197,6 +204,7 @@
 				9D5E3EBA280475CB0076AFDF /* tutorialApp.swift in Sources */,
 				9D5E3ED228047A050076AFDF /* 06.StateAndBinding.swift in Sources */,
 				9D5E3ED628047BBD0076AFDF /* 08.Picker.swift in Sources */,
+				9D5E3EE82804E9B90076AFDF /* 16.5.NavigationView_applied.swift in Sources */,
 				9D5E3EE428048B540076AFDF /* 15.ProfileList.swift in Sources */,
 				9D5E3ECE2804794A0076AFDF /* 04.ButtonView.swift in Sources */,
 			);
