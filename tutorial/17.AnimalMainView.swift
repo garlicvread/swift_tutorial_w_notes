@@ -23,6 +23,7 @@ import SwiftUI
 struct AnimalMainView_Tab: View {
     
     // animalsData는 16.5.NavigationView_applied의 라인 25에 있는 array를 불러온 것이다.
+    // refactoring 이후 좀 바뀌었는데, 16.5.1.NavigationData.swift의 라인 20을 보시라.
     var animals: [Animal] = animalsData
     
     var body: some View {
