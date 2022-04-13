@@ -31,12 +31,16 @@ struct NavigationMainView: View {
                 }
             }
             // .navigationBarTitle 이라는 modifier로 Navigation Bar의 타이틀을 정한다.
+            // .navitationBarTitle은 NavigationView의 {} 바깥이 아니라 안쪽에 작성해야 적용된다.
             .navigationBarTitle("네비게이션 뷰")
         }
+        // List에 스타일을 지정할 수 있다.
+        .listStyle(.plain)
+        
         // NavigationView 에 스타일 지정하기
         // ipad나 mac의 앱에서 사용되는 NavigationView는 기본적으로 사이드바가 존재하는 Double column 형식이다.
         // 사이드바가 없는 Stack 스타일의 NavigationView를 만들고 싶으면 .navigationViewStyle() 의 () 안에 StackNavigationViewStyle() 을 작성해야 한다.
-        .navigationViewStyle(StackNavigationViewStyle())
+//        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

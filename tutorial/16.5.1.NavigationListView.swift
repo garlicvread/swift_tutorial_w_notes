@@ -57,4 +57,3 @@ struct AnimalListView: View {
         .padding(.vertical, 4)
     }
 }
-
