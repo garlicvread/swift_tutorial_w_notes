@@ -35,6 +35,7 @@ struct AnimalNavigationMainView: View {
                     AnimalListView(animal: animal)
                 }
             }
+            .listStyle(.plain)
             .navigationBarTitle("애니멀!")
         }
     }
