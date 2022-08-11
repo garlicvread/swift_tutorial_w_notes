@@ -37,3 +37,7 @@ struct LandmarkRow_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 300, height: 70))
     }
 }
+
+
+// 여기까지 마쳤다면 LandmarkList.swift 파일을 생성하자.
+// 해당 파일은 SwiftUIView 파일이다.
