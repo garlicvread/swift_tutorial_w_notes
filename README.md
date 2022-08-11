@@ -35,14 +35,14 @@ Swift를 처음 접하는 초보자를 위한 튜토리얼 해설<br><br>
 [Section 8 Generate Previews Dynamically](https://github.com/garlicvread/swift_tutorial_w_notes/commit/14ae8101a9b8d663b42d9fc2ffc6a83f32b52496)
 
 ## 3. Handling User Input
-[Section 1 Mark the User’s Favorite Landmarks]()
+[Section 1 Mark the User’s Favorite Landmarks](https://github.com/garlicvread/swift_tutorial_w_notes/commit/092c8fdfbb4d7d8f96cf29f759f13b54eac0e68a)
 
-[Section 2 Filter the List View]()
+[Section 2 Filter the List View](https://github.com/garlicvread/swift_tutorial_w_notes/commit/290c83f0335eb60d62d8cea03948bfa2a698d2b6)
 
-[Section 3 Add a Control to Toggle the State]()
+[Section 3 Add a Control to Toggle the State](https://github.com/garlicvread/swift_tutorial_w_notes/commit/3a39361aec258c3097c5290883e1e2e9372e50a2)
 
-[Section 4 Use an Observable Object for Storage]()
+[Section 4 Use an Observable Object for Storage](https://github.com/garlicvread/swift_tutorial_w_notes/commit/7f893b4f9cd7254f9d4cac0cb293ca38d2f5ce0b)
 
-[Section 5 Adopt the Model Object in Your Views]()
+[Section 5 Adopt the Model Object in Your Views](https://github.com/garlicvread/swift_tutorial_w_notes/commit/40a7a22a4bc5d1bb473d7ccc951ed44528b8c49e)
 
-[Section 6 Create a Favorite Button for Each Landmark]()
+[Section 6 Create a Favorite Button for Each Landmark](https://github.com/garlicvread/swift_tutorial_w_notes/commit/8da4667919e3636a45ba7375e94ae509142da326)
