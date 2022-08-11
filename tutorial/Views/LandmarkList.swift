@@ -8,6 +8,20 @@
 import SwiftUI
 
 struct LandmarkList: View {
+
+    // 3.2.2. showFavoritesOnly 변수 추가 + @State 선언
+    // 해당 변수는 private로 설정 -> 해당 변수가 담고 있는 정보가 이 view 안에서만 쓰일 것이기 때문
+    @State private var showFavoritesOnly = true  // 3.2.6. false -> true 변경, 적용되는지 시험
+
+    // 3.2.3. computed property filteredLandmarks 추가
+    // filteredLandmarks는 showFaboritesOnly 프로퍼티와 Landmark 어레이의 각 원소가 갖는 landmark.isFavorite 값에 따라 결정됨
+    var filteredLandmarks: [Landmark] {
+        landmarks.filter { landmark in
+            (!showFavoritesOnly || landmark.isFavorite)
+        }
+    }
+
+
     var body: some View {
 //        List {  // 2.4.2. List 객체 내부에 LandmarkRow 인스턴스를 배치한다
 //            LandmarkRow(landmark: landmarks[0])
@@ -29,7 +43,7 @@ struct LandmarkList: View {
         // 2.6.4. List를 NavigationView 안으로 재배치
         NavigationView {
             // 2.5.4. 두 번째 방식 코딩: 코드가 더 간결해짐
-            List(landmarks) { landmark in
+            List(filteredLandmarks) { landmark in  // 3.2.5. landmarks 대신 filteredLandmarks 변수 사용
                 NavigationLink {  // 2.6.6. NavigationLink 내 반환되는 row를 래핑하고 목적지를 LandmarkDetail로 명시
                     LandmarkDetail(landmark: landmark)  // 2.7.7. 현재 landmark 값을 목적지인 LandmarkDetail로 넘김
                 } label: {
@@ -43,13 +57,14 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone SE (3rd generation)", "iPhone 13 Pro Max"], id: \.self) { deviceName in  // 2.8.2. ForEach 구문으로 여러 디바이스 프리뷰를 동시에 볼 수 있도록 변경
-            LandmarkList()
-    //            .previewDevice(PreviewDevice(rawValue: "iPhone SE (2nd generation"))  // 2.8.1. iPhone SE 2세대 모델로 프리뷰 디바이스 설정
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-                .previewDisplayName(deviceName)  // 2.8.3. previewDisplayName(_:) 메서드 추가 -> 프리뷰의 레이블로 추가
-        }
-//    LandmarkList()
+        // 3.2.1. 귀찮으니까 프리뷰 하나만 남기고 주석처리
+//        ForEach(["iPhone SE (3rd generation)", "iPhone 13 Pro Max"], id: \.self) { deviceName in  // 2.8.2. ForEach 구문으로 여러 디바이스 프리뷰를 동시에 볼 수 있도록 변경
+//            LandmarkList()
+//    //            .previewDevice(PreviewDevice(rawValue: "iPhone SE (2nd generation"))  // 2.8.1. iPhone SE 2세대 모델로 프리뷰 디바이스 설정
+//                .previewDevice(PreviewDevice(rawValue: deviceName))
+//                .previewDisplayName(deviceName)  // 2.8.3. previewDisplayName(_:) 메서드 추가 -> 프리뷰의 레이블로 추가
+//        }
+    LandmarkList()
     }
 }
 
