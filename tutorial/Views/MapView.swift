@@ -15,12 +15,7 @@ struct MapView: View {
 
     // 1.5.3. 위치 정보를 담는 변수 region에 @State 옵션 추가
     // @State 옵션(attribute)를 추가하는 경우 그 변수의 데이터가 변동되면 자동으로 뷰가 업데이트된다.
-    @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 34.011_286,
-                                       longitude: -116.166_868),
-        span: MKCoordinateSpan(latitudeDelta: 0.2,
-                               longitudeDelta: 0.2)
-    )
+    @State private var region = MKCoordinateRegion()
 
     var body: some View {
         Map(coordinateRegion: $region)  // 1.5.4. MapView 추가
