@@ -17,6 +17,7 @@
 		941CE6D028A4CC5E00484938 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941CE6CF28A4CC5E00484938 /* LandmarkDetail.swift */; };
 		94D6660628A50BF000FB6980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D6660528A50BF000FB6980 /* Assets.xcassets */; };
 		94D6660828A50C1600FB6980 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 94D6660728A50C1600FB6980 /* landmarkData.json */; };
+		94D6660A28A51A4C00FB6980 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6660928A51A4C00FB6980 /* FavoriteButton.swift */; };
 		9D5E3EBA280475CB0076AFDF /* tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EB9280475CB0076AFDF /* tutorialApp.swift */; };
 		9D5E3EBC280475CB0076AFDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EBB280475CB0076AFDF /* ContentView.swift */; };
 		9D5E3EC1280475CC0076AFDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5E3EC0280475CC0076AFDF /* Preview Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		941CE6CF28A4CC5E00484938 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		94D6660528A50BF000FB6980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = tutorial/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		94D6660728A50C1600FB6980 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		94D6660928A51A4C00FB6980 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		9D5E3EB6280475CB0076AFDF /* SwiftUITutorialWithNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorialWithNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5E3EB9280475CB0076AFDF /* tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorialApp.swift; sourceTree = "<group>"; };
 		9D5E3EBB280475CB0076AFDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,13 +55,10 @@
 		941CE6C928A4BA0E00484938 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9D5E3EBB280475CB0076AFDF /* ContentView.swift */,
 				940ECDAD28A37ECF00092638 /* MainContentView.swift */,
-				941CE6B928A4963700484938 /* CircleImage.swift */,
-				941CE6C128A499BD00484938 /* MapView.swift */,
-				941CE6CB28A4BC7900484938 /* LandmarkRow.swift */,
-				941CE6CD28A4C2E400484938 /* LandmarkList.swift */,
-				941CE6CF28A4CC5E00484938 /* LandmarkDetail.swift */,
+				94D6660B28A51B8B00FB6980 /* Landmarks */,
+				94D6660C28A51BA000FB6980 /* Helpers */,
+				9D5E3EBB280475CB0076AFDF /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -79,6 +78,26 @@
 				94D6660728A50C1600FB6980 /* landmarkData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		94D6660B28A51B8B00FB6980 /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				941CE6CB28A4BC7900484938 /* LandmarkRow.swift */,
+				941CE6CD28A4C2E400484938 /* LandmarkList.swift */,
+				941CE6CF28A4CC5E00484938 /* LandmarkDetail.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		94D6660C28A51BA000FB6980 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				941CE6B928A4963700484938 /* CircleImage.swift */,
+				941CE6C128A499BD00484938 /* MapView.swift */,
+				94D6660928A51A4C00FB6980 /* FavoriteButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9D5E3EAD280475CB0076AFDF = {
@@ -198,6 +217,7 @@
 				941CE6C628A4B42100484938 /* Landmark.swift in Sources */,
 				941CE6CC28A4BC7900484938 /* LandmarkRow.swift in Sources */,
 				941CE6D028A4CC5E00484938 /* LandmarkDetail.swift in Sources */,
+				94D6660A28A51A4C00FB6980 /* FavoriteButton.swift in Sources */,
 				941CE6C828A4B83C00484938 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

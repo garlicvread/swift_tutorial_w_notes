@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    // 3.5.1. modelData 변수 선언 후 @EnvironmentObject 속성 추가 ⬇️ 프리뷰로
+    @EnvironmentObject var modelData: ModelData
 
     // 3.2.2. showFavoritesOnly 변수 추가 + @State 선언
     // 해당 변수는 private로 설정 -> 해당 변수가 담고 있는 정보가 이 view 안에서만 쓰일 것이기 때문
@@ -17,7 +19,8 @@ struct LandmarkList: View {
     // 3.2.3. computed property filteredLandmarks 추가
     // filteredLandmarks는 showFaboritesOnly 프로퍼티와 Landmark 어레이의 각 원소가 갖는 landmark.isFavorite 값에 따라 결정됨
     var filteredLandmarks: [Landmark] {
-        landmarks.filter { landmark in
+        modelData.landmarks.filter { landmark in  // 3.5.2. landmark 대신 modelData.landmarks 사용
+            // 3.5.2. 까지 도달했으면 LandmarkDetai.swift 파일로 이동
             (!showFavoritesOnly || landmark.isFavorite)
         }
     }
@@ -82,6 +85,7 @@ struct LandmarkList_Previews: PreviewProvider {
 //                .previewDisplayName(deviceName)  // 2.8.3. previewDisplayName(_:) 메서드 추가 -> 프리뷰의 레이블로 추가
 //        }
     LandmarkList()
+        .environmentObject(ModelData())  // ⬆️ 3.5.1. environmentObject(_:) modifier 추가
     }
 }
 

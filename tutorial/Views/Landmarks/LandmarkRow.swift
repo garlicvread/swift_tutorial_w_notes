@@ -31,6 +31,9 @@ struct LandmarkRow: View {
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+    // 3.5.4. 프리뷰에서 ModelData 객체를 사용하도록 지정
+    static var landmarks = ModelData().landmarks
+
     static var previews: some View {
         Group {  // 2.3.4. 코드를 간단히 줄이려면 group으로 Preview를 묶은 방법도 있음
             LandmarkRow(landmark: landmarks[0])

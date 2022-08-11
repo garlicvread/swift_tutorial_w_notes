@@ -15,6 +15,7 @@ final class ModelData: ObservableObject {
     // 3.4.3. Landmark 배열을 ModelData 클래스 내로 이동
     // 3.4.4. landmarks 변수에 @Published 속성 추가 -> SwiftUI 가 값 변동을 알 수 있도록 해 줌
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    // 3.4.4. 까지 왔으면 LandmarkList.swift 파일로 이동하자.
 }
 
 // 2.1.9. 애플리케이션의 메인 번들에서 지정된 이름의 json 데이터를 가져오는 메서드 생성

@@ -23,5 +23,7 @@ struct MainContentView: View {
 struct MainContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainContentView()
+            .environmentObject(ModelData())  // 3.5.5. ModelData 객체를 사용하도록 변경
+        // 3.5.5. 까지 도달했으면 tutorialApp.swift 파일로 이동
     }
 }
