@@ -26,5 +26,4 @@ struct CircleImage_Previews: PreviewProvider {
     }
 }
 
-// 이제 MapView.swift 파일을 만들어야 한다.
-// MapView.swift는 SwiftUIView를 위한 파일이다.
+// 주석 1.4.7.까지 따라왔다면 MapView.swift 파일로 이동하자.
