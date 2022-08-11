@@ -5,7 +5,7 @@
 //  Created by 김제필 on 8/11/22.
 //
 
-// CircleImage.swift는 일반 .swift 파일이 아니라 SwiftUI 뷰를 위한 파일이다.
+// CircleImage.swift는 일반 .swift 파일이 아니라 SwiftUIView 파일이다.
 
 import SwiftUI
 

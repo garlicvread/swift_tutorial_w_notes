@@ -11,7 +11,7 @@ import SwiftUI
 // View 프로토콜 렌더링을 위한 구조체(Structure)
 struct MainContentView: View {
     var body: some View {
-        // 1.6.2. 기존 VSTack을 감쌀 새 VStack 삽입
+        // 1.6.2. 기존 VStack을 감쌀 새 VStack 삽입
         VStack {
             // 1.6.3. MapView 가져오기, 6.4. 리이브 프리뷰로 확인
             MapView()
@@ -27,7 +27,7 @@ struct MainContentView: View {
                 Text("Turtle Rock")
                     .font(.title)
 
-                // 1.3.6. HSTack 추가
+                // 1.3.6. HStack 추가
                 HStack {
                     Text("Joshua Tree National Park")  // 1.3.3. TextView의 placeholder 변경
 //                        .font(.subheadline)  // 1.3.4. 폰트 변경

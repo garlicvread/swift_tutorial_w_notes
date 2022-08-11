@@ -37,4 +37,6 @@ func load<T: Decodable>(_ filename: String) -> T {
 }
 
 // 여기까지 작업이 끝났다면 디렉토리를 정리하자.
-// 어떤 디렉토리에 어떤 파일을 배치할 것인지는 공식 문서를 보면 나옴.
+// 어떤 디렉토리에 어떤 파일을 배치할 것인지는 공식 문서를 보면 나온다.
+
+// 이제 SwiftUIView 파일인 LandmarkRow.swift를 만들자.
