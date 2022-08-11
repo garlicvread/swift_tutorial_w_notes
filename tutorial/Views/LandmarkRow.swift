@@ -24,6 +24,7 @@ struct LandmarkRow: View {
             if landmark.isFavorite {  // 3.1.4. 조건에 따라 별 이미지를 삽입
                 Image(systemName: "star.fill")
                     .foregroundColor(.yellow)  // 3.1.5. 별 이미지 색상 변경
+                // 3.1.5. 까지 진행했으면 LandmarkList.swift 파일로 갈 것
             }
         }
     }
@@ -43,6 +44,4 @@ struct LandmarkRow_Previews: PreviewProvider {
     }
 }
 
-
-// 여기까지 마쳤다면 LandmarkList.swift 파일을 생성하자.
-// 해당 파일은 SwiftUIView 파일이다.
+// 2.3.4. 까지 마쳤다면 LandmarkList.swift 파일을 생성하자.
