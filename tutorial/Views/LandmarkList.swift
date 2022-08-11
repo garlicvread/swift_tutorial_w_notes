@@ -43,8 +43,14 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkList()
+        ForEach(["iPhone SE (2nd generation", "iPhone XS Max"], id: \.self) { deviceName in  // 2.8.2. ForEach 구문으로 여러 디바이스 프리뷰를 동시에 볼 수 있도록 변경
+            LandmarkList()
+    //            .previewDevice(PreviewDevice(rawValue: "iPhone SE (2nd generation"))  // 2.8.1. iPhone SE 2세대 모델로 프리뷰 디바이스 설정
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)  // 2.8.3. previewDisplayName(_:) 메서드 추가 -> 프리뷰의 레이블로 추가
+        }
     }
 }
 
 // 2.6.6. 항목까지 따라왔으면 이제 CircleImage.swift로 이동한다
+// 2.8.3. 항목까지 따라왔으면 Landmark.swift 파일로 이동
