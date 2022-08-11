@@ -13,7 +13,9 @@ import CoreLocation  // 2.1.7. computed property인 locationCoordinates를 위�
 // 몇 가지 필요한 데이터가 이미 landmarkData.json 파일에 담겨 있는데, 이 json파일에 담겨 있는 데이터의 항목명과 동일하게 항목을 작성한다.
 // Codable 옵션은 데이터를 Landmark 구조체와 json 파일 간 데이터 전송을 위한 것
 // 나중에 Codable 프로토콜의 Decodable 컴포넌트가 사용됨: 파일에서 데이터를 읽기 위한 것.
-struct Landmark: Hashable, Codable {
+struct Landmark: Hashable, Codable, Identifiable {  // 2.5.3. Identifiable 프로토콜을 따르도록 코드 재작성 -> 데이터를 읽을 때 id 값을 디코딩할 수 있도록 속성을 추가하는 것
+
+    // 2.5.3. Landmark 데이터는 Identifiable 프로토콜 사용에 필요한 id 값이 이미 정의가 돼 있는 상태임 -> 2.5.3.까지 따라왔으면 LandmarkList.swift 파일로 이동
     var id: Int
     var name: String
     var park: String
