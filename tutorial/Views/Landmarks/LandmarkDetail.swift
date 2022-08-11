@@ -10,6 +10,13 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    // 3.6.5. computed property landmarkIndex를 생성하여 EnvironmentalObjet 변수인 modelData와 비교한다.
+    @EnvironmentObject var modelData: ModelData
+
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id})!
+    }
+
     // 2.7.6. Landmark 프로퍼티 추가. 프리뷰 코드로 이동 ⬇️
     var landmark: Landmark
 
@@ -32,8 +39,13 @@ struct LandmarkDetail: View {
 
             // 1.3.1., 1.3.2. VStack 추가
             VStack(alignment: .leading) {  // 1.3.5. alignment 옵션 추가
-                Text(landmark.name)  // 2.7.8. 필요한 데이터 추가
-                    .font(.title)
+                // 3.6.6. HStack 내로 landmark.name TextView를 이동하고 옆에 FavoriteButton 추가
+                HStack {
+                    Text(landmark.name)  // 2.7.8. 필요한 데이터 추가
+                        .font(.title)
+
+                    FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                }
 
                 // 1.3.6. HStack 추가
                 HStack {
