@@ -11,7 +11,8 @@ struct LandmarkList: View {
 
     // 3.2.2. showFavoritesOnly 변수 추가 + @State 선언
     // 해당 변수는 private로 설정 -> 해당 변수가 담고 있는 정보가 이 view 안에서만 쓰일 것이기 때문
-    @State private var showFavoritesOnly = true  // 3.2.6. false -> true 변경, 적용되는지 시험
+    @State private var showFavoritesOnly = false  // 3.2.6. false -> true 변경, 적용되는지 시험, // 3.3.3. true -> false 재변경
+    // 3.3.3. 항목에 도달했으면 ModelData.swift 파일로 갈 것
 
     // 3.2.3. computed property filteredLandmarks 추가
     // filteredLandmarks는 showFaboritesOnly 프로퍼티와 Landmark 어레이의 각 원소가 갖는 landmark.isFavorite 값에 따라 결정됨
@@ -42,15 +43,31 @@ struct LandmarkList: View {
 
         // 2.6.4. List를 NavigationView 안으로 재배치
         NavigationView {
-            // 2.5.4. 두 번째 방식 코딩: 코드가 더 간결해짐
-            List(filteredLandmarks) { landmark in  // 3.2.5. landmarks 대신 filteredLandmarks 변수 사용
-                NavigationLink {  // 2.6.6. NavigationLink 내 반환되는 row를 래핑하고 목적지를 LandmarkDetail로 명시
-                    LandmarkDetail(landmark: landmark)  // 2.7.7. 현재 landmark 값을 목적지인 LandmarkDetail로 넘김
-                } label: {
-                    LandmarkRow(landmark: landmark)
+//            // 2.5.4. 두 번째 방식 코딩: 코드가 더 간결해짐
+//            List(filteredLandmarks) { landmark in  // 3.2.5. landmarks 대신 filteredLandmarks 변수 사용
+//                NavigationLink {  // 2.6.6. NavigationLink 내 반환되는 row를 래핑하고 목적지를 LandmarkDetail로 명시
+//                    LandmarkDetail(landmark: landmark)  // 2.7.7. 현재 landmark 값을 목적지인 LandmarkDetail로 넘김
+//                } label: {
+//                    LandmarkRow(landmark: landmark)
+//                }
+//            }
+//            .navigationTitle("Landmarks")  // 2.6.5. navigationTitle(_ :) modifier 메서드 호출
+
+            List {
+                // 3.3.2. 토글 버튼 추가
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites only")
+                }
+
+                ForEach(filteredLandmarks) { landmark in  // 3.3.1. landmarks -> rows로 변경하기 위해 ForEach 구문 사용
+                    NavigationLink {
+                        LandmarkDetail(landmark: landmark)
+                    } label: {
+                        LandmarkRow(landmark: landmark)
+                    }
                 }
             }
-            .navigationTitle("Landmarks")  // 2.6.5. navigationTitle(_ :) modifier 메서드 호출
+            .navigationTitle("Landmarks")
         }
     }
 }
