@@ -20,6 +20,11 @@ struct LandmarkRow: View {
             Text(landmark.name)  // landmark 프로퍼티 내 name 항목 사용하도록 TextView 변경
 
             Spacer()  // 2.2.6. HStack 완성
+
+            if landmark.isFavorite {  // 3.1.4. 조건에 따라 별 이미지를 삽입
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)  // 3.1.5. 별 이미지 색상 변경
+            }
         }
     }
 }

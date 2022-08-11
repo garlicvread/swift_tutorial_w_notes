@@ -54,4 +54,4 @@ struct LandmarkList_Previews: PreviewProvider {
 }
 
 // 2.6.6. 항목까지 따라왔으면 이제 CircleImage.swift로 이동한다
-// 2.8.3. 항목까지 따라왔으면 Landmark.swift 파일로 이동
+// 2.8.3. 항목까지 따라왔으면 Landmark.swift 파일로 이동하여 3.1.1. 항목을 찾을 것
