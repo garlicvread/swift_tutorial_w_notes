@@ -26,6 +26,14 @@ struct LandmarkRow: View {
 
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkRow(landmark: landmarks[0])  // 2.2.4. LandmarkRow 구조체 내에 정의된 parameter 추가 -> landmarks 배열의 요소 특정
+        Group {  // 2.3.4. 코드를 간단히 줄이려면 group으로 Preview를 묶은 방법도 있음
+            LandmarkRow(landmark: landmarks[0])
+            LandmarkRow(landmark: landmarks[1])
+        }
+//        LandmarkRow(landmark: landmarks[0])  // 2.2.4. LandmarkRow 구조체 내에 정의된 parameter 추가 -> landmarks 배열의 요소 특정
+//            .previewLayout(.fixed(width: 300, height: 70))  // 2.3.2. .previewLayout 메서드를 사용하면 static preview의 사이즈를 조절할 수 있음
+//
+//        LandmarkRow(landmark: landmarks[1])  // 2.3.3. preview를 여러 개 추가할 수 있다
+            .previewLayout(.fixed(width: 300, height: 70))
     }
 }
