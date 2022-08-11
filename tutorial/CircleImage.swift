@@ -5,6 +5,8 @@
 //  Created by 김제필 on 8/11/22.
 //
 
+// CircleImage.swift는 일반 .swift 파일이 아니라 SwiftUI 뷰를 위한 파일이다.
+
 import SwiftUI
 
 struct CircleImage: View {
@@ -23,3 +25,6 @@ struct CircleImage_Previews: PreviewProvider {
         CircleImage()
     }
 }
+
+// 이제 MapView.swift 파일을 만들어야 한다.
+// MapView.swift는 SwiftUIView를 위한 파일이다.

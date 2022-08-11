@@ -10,6 +10,7 @@
 		940ECDAE28A37ECF00092638 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940ECDAD28A37ECF00092638 /* MainContentView.swift */; };
 		941CE6BB28A4963700484938 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941CE6B928A4963700484938 /* CircleImage.swift */; };
 		941CE6C028A496ED00484938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941CE6BF28A496ED00484938 /* Assets.xcassets */; };
+		941CE6C228A499BD00484938 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941CE6C128A499BD00484938 /* MapView.swift */; };
 		9D5E3EBA280475CB0076AFDF /* tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EB9280475CB0076AFDF /* tutorialApp.swift */; };
 		9D5E3EBC280475CB0076AFDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E3EBB280475CB0076AFDF /* ContentView.swift */; };
 		9D5E3EC1280475CC0076AFDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5E3EC0280475CC0076AFDF /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		940ECDAD28A37ECF00092638 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		941CE6B928A4963700484938 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		941CE6BF28A496ED00484938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../tutorial/Assets.xcassets; sourceTree = "<group>"; };
+		941CE6C128A499BD00484938 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9D5E3EB6280475CB0076AFDF /* SwiftUITutorialWithNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorialWithNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5E3EB9280475CB0076AFDF /* tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorialApp.swift; sourceTree = "<group>"; };
 		9D5E3EBB280475CB0076AFDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,10 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				941CE6BC28A496B500484938 /* Resource */,
-				941CE6B928A4963700484938 /* CircleImage.swift */,
 				9D5E3EB9280475CB0076AFDF /* tutorialApp.swift */,
-				940ECDAD28A37ECF00092638 /* MainContentView.swift */,
 				9D5E3EBB280475CB0076AFDF /* ContentView.swift */,
+				940ECDAD28A37ECF00092638 /* MainContentView.swift */,
+				941CE6B928A4963700484938 /* CircleImage.swift */,
+				941CE6C128A499BD00484938 /* MapView.swift */,
 				9D5E3EBF280475CC0076AFDF /* Preview Content */,
 			);
 			path = tutorial;
@@ -153,6 +156,7 @@
 			files = (
 				9D5E3EBC280475CB0076AFDF /* ContentView.swift in Sources */,
 				941CE6BB28A4963700484938 /* CircleImage.swift in Sources */,
+				941CE6C228A499BD00484938 /* MapView.swift in Sources */,
 				9D5E3EBA280475CB0076AFDF /* tutorialApp.swift in Sources */,
 				940ECDAE28A37ECF00092638 /* MainContentView.swift in Sources */,
 			);
