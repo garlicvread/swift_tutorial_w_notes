@@ -68,7 +68,10 @@ struct LandmarkDetail: View {
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail(landmark: landmarks[0])  // 2.7.6. ⬆️ 에서 선언한 Landmark 프로퍼티 추가
+        // 2.7.6. ⬆️ 에서 선언한 Landmark 프로퍼티 추가
+        // 3.5.3. landmarks[0] 대신 ModelData().landmarks[0] 사용
+        // 3.5.3. 까지 이동했으면 LandmarkRow.swift 파일로 이동
+        LandmarkDetail(landmark: ModelData().landmarks[0])
     }
 }
 
