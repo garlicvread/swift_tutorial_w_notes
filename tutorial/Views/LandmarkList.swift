@@ -26,9 +26,17 @@ struct LandmarkList: View {
 //            // 2.5.2. 항목까지 따라왔으면 이제 Landmark.swift 파일로 가 보자
 //        }
 
-        // 2.5.4. 두 번째 방식 코딩: 코드가 더 간결해짐
-        List(landmarks) { landmark in
-            LandmarkRow(landmark: landmark)
+        // 2.6.4. List를 NavigationView 안으로 재배치
+        NavigationView {
+            // 2.5.4. 두 번째 방식 코딩: 코드가 더 간결해짐
+            List(landmarks) { landmark in
+                NavigationLink {  // 2.6.6. NavigationLink 내 반환되는 row를 래핑하고 목적지를 LandmarkDetail로 명시
+                    LandmarkDetail()
+                } label: {
+                    LandmarkRow(landmark: landmark)
+                }
+            }
+            .navigationTitle("Landmarks")  // 2.6.5. navigationTitle(_ :) modifier 메서드 호출
         }
     }
 }
@@ -38,3 +46,5 @@ struct LandmarkList_Previews: PreviewProvider {
         LandmarkList()
     }
 }
+
+// 2.6.6. 항목까지 따라왔으면 이제 CircleImage.swift로 이동한다
