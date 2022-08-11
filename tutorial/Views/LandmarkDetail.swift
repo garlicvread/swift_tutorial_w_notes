@@ -73,3 +73,4 @@ struct LandmarkDetail_Previews: PreviewProvider {
 }
 
 // 2.7.6. 까지 따라왔으면 LandmarkList.swift 파일로 이동
+// 2.7.10. 까지 따라왔으면 LandmarkList.swift 파일로 이동
