@@ -31,7 +31,7 @@ struct LandmarkList: View {
             // 2.5.4. 두 번째 방식 코딩: 코드가 더 간결해짐
             List(landmarks) { landmark in
                 NavigationLink {  // 2.6.6. NavigationLink 내 반환되는 row를 래핑하고 목적지를 LandmarkDetail로 명시
-                    LandmarkDetail()
+                    LandmarkDetail(landmark: landmark)  // 2.7.7. 현재 landmark 값을 목적지인 LandmarkDetail로 넘김
                 } label: {
                     LandmarkRow(landmark: landmark)
                 }
