@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+// View 프로토콜 렌더링을 위한 구조체(Structure)
 struct MainContentView: View {
     var body: some View {
 
@@ -37,3 +38,6 @@ struct MainContentView_Previews: PreviewProvider {
         MainContentView()
     }
 }
+
+// 이제 CircleImage.swift 파일을 작성한다.
+// CircleImage.swift 파일은 SwiftUIView를 위한 파일이다.
