@@ -21,6 +21,8 @@ struct Landmark: Hashable, Codable, Identifiable {  // 2.5.3. Identifiable 프�
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool  // 3.1.1 isFavorite 프로퍼티 추가 -> json 파일에 이 값이 있어야 함: 이렇게 쓰려면 json 파일 내에 isFavorite 항목을 추가해야 한다.
+    // 3.1.1. 까지 왔으면 LandmarkRow.swift 파일로 이동
 
     // 2.1.5. imageName 변수 추가: Assets에 등록된 이미지 파일의 파일명을 읽어오기 위한 것
     private var imageName: String
